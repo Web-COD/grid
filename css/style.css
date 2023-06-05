@@ -1,0 +1,610 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+:root {
+  --heading: rgb(20, 19, 19);
+  --para: #264653ff;
+  --para-tint: rgb(86, 159, 188);
+  --white: #fff;
+  --gradient: linear-gradient(10deg, rgba(42, 157, 143, 1) 100%, rgba(233, 196, 106, 1) 100%);
+  --shadow: 0 0 20px 0 rgba(132 144 255 / 20%);
+
+  --charcoal: #264653ff;
+  --persian-green: #2a9d8fff;
+  --maize-crayola: #e9c46aff;
+  --sandy-brown: #f4a261ff;
+  --burnt-sienna: #e76f51ff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1 {
+  color: var(--heading);
+  font-weight: 600;
+}
+
+h3 {
+  font-weight: 400;
+}
+
+p {
+  color: var(--para);
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+
+
+/* Header Section Starts Here!! */
+
+/* Background Image Slider */
+.slider-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.slider-container .slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 400%;
+  height: 100%;
+
+  animation: Animated-Img-Slides 15s linear infinite;
+}
+
+.slider-container .slider .slide {
+  width: 25%;
+  height: 100%;
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Background Images */
+.slider-container .slider .slide-1 {
+  background-image: linear-gradient(60deg, rgba(37, 48, 60, 0.8), rgb(65, 74, 85)), url(../images/header-img.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.slider-container .slider .slide-2 {
+  background-image: linear-gradient(60deg, rgba(37, 48, 60, 0.8), rgb(65, 74, 85)), url(../images/img-1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.slider-container .slider .slide-3 {
+  background-image: linear-gradient(60deg, rgba(37, 48, 60, 0.8), rgb(65, 74, 85)), url(../images/slide-img-3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.slider-container .slider .slide-1 {
+  background-image: linear-gradient(60deg, rgba(37, 48, 60, 0.8), rgb(65, 74, 85)), url(../images/header-img.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+/* Background Images End */
+
+
+
+/* Bckground Images Captions */
+.slider-container .slider .slide .caption h2,
+.slider-container .slider .slide .caption p,
+.slider-container .slider .slide .caption p span {
+  color: white;
+}
+
+.caption {
+  text-align: center;
+}
+
+.slider-container .slider .slide .caption h2 {
+  font-weight: 900;
+  font-size: 10rem;
+  line-height: 8.5rem;
+
+  background: linear-gradient(rgba(255,255,255,0.6) 20%, transparent 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.slider-container .slider .slide .caption p {
+  margin-top: 3rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.slider-container .slider .slide .caption p span {
+  margin: 0 2rem;
+}
+
+.slider-container .slider .slide .caption p span {
+  color: rgb(255, 31, 68);
+}
+
+/* .slider-container .slider .slide .caption p span  {
+  color: rgb(255, 128, 0);
+} */
+
+/* .slider-container .slider .slide .caption p span  {
+  color: rgb(10, 202, 0);
+} */
+/* Bckground Images Captions End */
+
+@keyframes Animated-Img-Slides {
+
+  0% {
+    left: 0%;
+  }
+
+  20% {
+    left: 0%;
+  }
+
+  30% {
+    left: -100%;
+  }
+
+  55% {
+    left: -100%;
+  }
+
+  65% {
+    left: -200%;
+  }
+
+  90% {
+    left: -200%;
+  }
+
+  100% {
+    left: -300%;
+  }
+
+}
+
+/* Background Image Slider End */
+
+
+/* Navigation Bar */
+
+/* Logo Image */
+.logo-img {
+  padding-bottom: 50px;
+}
+
+.logo {
+  height: 50px;
+}
+
+/* Navbar */
+.header .slider-container .navbar-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 4rem 0;
+  z-index: 1000;
+}
+
+.header .slider-container .navbar-container .navbar {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.header .slider-container .navbar-container .navbar a {
+  color: var(--white);
+  text-transform: uppercase;
+  transition: all 0.5s linear;
+}
+
+.header .slider-container .navbar-container .navbar a:hover {
+  color: var(--maize-crayola);
+}
+
+/* Dropdown Menu */
+.nav-link {
+  padding-bottom: 3.5rem;
+}
+
+.dropdown-content {
+  padding: 2rem 4rem;
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 7.5rem;
+  background-color: rgba(37, 48, 60, 0.9);
+  width: 100%;
+  min-height: 50vh;
+}
+
+.dropdown:hover .dropdown-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.dropdown:hover .drop-link > .nav-link {
+  color: var(--burnt-sienna);
+}
+
+.sub-links {
+  font-size: 1rem;
+  padding-left: 0;
+}
+
+.sub-link {
+  display: grid;
+  margin-top: 1.4rem;
+  color: white;
+  font-weight: 300;
+}
+
+.head {
+  font-size: 1.6rem;
+  color: white;
+  text-align: center;
+}
+
+/* CTA Button in Header */
+.header-btn {
+  position: relative;
+  top: 400px;
+  left: 43%;
+  z-index: 900;
+
+  padding: 1rem 4rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 20rem;
+  color: var(--white);
+  border: 2px solid var(--burnt-sienna);
+  background-color: var(--burnt-sienna);
+
+  cursor: pointer;
+  transition: all 0.5s linear;
+}
+
+.header-btn:hover {
+  background-color: transparent;
+}
+
+/* Header Section Ends Here!! */
+
+
+
+
+/* Our Clients Section */
+
+/* logo image styling */
+#clients .customer-logo-slider .slider .slide img {
+  width: 14rem;
+  margin-left: -4px;
+}
+
+/* heading styling */
+#clients .our-clients {
+  font-size: 4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* Container styling */
+#clients {
+  width: 90%;
+  text-align: center;
+  margin: 10rem auto;
+  overflow: hidden;
+}
+
+/* Slider */
+#clients .customer-logo-slider {
+  overflow: hidden;
+  position: relative;
+  margin-top: 5rem;
+}
+
+#clients .customer-logo-slider .slider {
+display: flex;
+align-items: center;
+width: calc(250px * 32);
+gap: 2rem;
+
+animation: client-logo-slide 120s linear infinite;
+}
+
+@keyframes client-logo-slide {
+
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-250px * 16));
+  } 
+
+}
+/* Our Clients Section Ends */
+
+
+/* What We Do Section */
+.services-what-we-do .service-desc .desc-img img {
+  width: 40rem;
+}
+
+.container {
+  text-align: center;
+}
+
+/* title styling */
+.title { 
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  font-weight: 700;
+  padding: 8px;
+  margin: 100px auto;
+}
+
+.upper-line {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 2px;
+  border: none;
+  background-color: #FFAE41;
+}
+
+.bottom-line {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  border: none;
+  background-color: #FFAE41;
+}
+
+/* button styling */
+.service-btn {
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  border-radius: 50px;
+  padding: 14px 28px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin: 0 0 90px 32px;
+}
+
+.s-1 {
+  border: 2px solid #FFAE41;
+  transition: all 0.5s;
+}
+
+.s-1:hover {
+  background-color: #FFAE41;
+  position: relative;
+}
+
+.desc {
+  position: absolute;
+  display: none;
+}
+
+.s-2:hover .desc {
+  display: flex;
+}
+
+.s-2 {
+  border: 2px solid #15AF81;
+  transition: all 0.5s;
+}
+
+.s-2:hover {
+  background-color: #15AF81;
+  color: white;
+}
+
+.s-3 {
+  border: 2px solid #33C9FF;
+  transition: all 0.5s;
+}
+
+.s-3:hover {
+  background-color: #33C9FF;
+}
+
+.s-4 {
+  border: 2px solid #E41576;
+  transition: all 0.5s;
+}
+
+.s-4:hover {
+  background-color: #E41576;
+  color: var(--white);
+}
+
+/* service-desc styling */
+.service-desc {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  margin-bottom: 5rem;
+  scroll-behavior: smooth;
+  scroll-margin-top: 4rem;
+}
+
+.text-desc {
+  text-align: left;
+  margin-left: 10rem;
+}
+
+.sub-title {
+  font-weight: 900;
+  color: #15AF81;
+  padding-left: 1rem;
+  border-left: 10px solid #15AF81;
+}
+
+.sevice-para {
+  width: 60%;
+  margin: 50px 0;
+}
+
+/* What We Do Section Ends */
+
+
+/* Why choose us section */
+.why-us {
+  padding-top: 50px;
+  text-align: center;
+  background-image: url(../images/Component\ 2\ –\ 1.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  /* background-attachment: fixed; */
+  background-size: cover;
+  color: white;
+  height: 50vh;
+  width: 85%;
+  margin: 10rem auto 10rem;
+}
+
+.why-us-reasons {
+  display: flex;
+  justify-content: center;
+  gap: 7rem;
+  margin-top: 3rem;
+}
+
+.why-choose-us {
+  color: white;
+  font-size: 2.4rem;
+}
+
+.who-we-are {
+  margin-bottom: 2rem;
+}
+
+.stat-1 {
+  color: white;
+  font-size: 4.4rem;
+}
+
+.why-desc {
+  color: white;
+  width: 200px;
+  text-align: center;
+  line-height: 1.4rem;
+}
+
+
+
+
+/* Project Work Gallary Section */
+.gallary-section {
+  padding: 2rem 8rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+/* title styling */
+.title-g {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 5rem;
+  border-top: 2px solid #FFAE41;
+  border-bottom: 2px solid #FFAE41;
+  padding: 1rem 0;
+  font-size: 3rem;
+  font-weight: 500;
+  color: #FFAE41;
+}
+
+/* styling project img */
+.project-img {
+  width: 25rem;
+  height: 15rem;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 1rem;
+}
+
+.gallary-grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 1rem;
+}
+
+/* More-Project-Btn Styling */
+.more-project-btn {
+  padding: 1rem 4rem;
+  margin-top: 2rem;
+  background-color: #FFAE41;
+  border: 2px solid #FFAE41;
+  border-radius: 20rem;
+  cursor: pointer;
+}
+
+/* Contact-Us Section */
+form {
+  text-align: center;
+  padding: 10rem;
+}
+
+input {
+  outline: none;
+  border: none;
+  width: 30%;
+  height: 50px;
+  width: 1000px;
+  background-color: #fff0dd;
+  padding-left: 20px;
+  border-radius: 200px;
+}
+
+form > p {
+  margin: 2rem;
+}
+
+/* Footer Section */
+.footer {
+  margin: 1rem;
+  text-align: center;
+  background-color: #FFAE41;
+  padding: 2rem;
+}
+
+.footer > p {
+  line-height: 2rem;
+}

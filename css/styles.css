@@ -1,0 +1,224 @@
+/**************************/
+/* Section Header */
+/**************************/
+.section-header {
+    width: 100%;
+    height: 88vh;
+
+    background-image: linear-gradient(90deg, rgba(2, 48, 71, 0.9), rgba(2, 48, 71, 0.9)), url(../images/header-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    animation: motion-bg-img 60s 2s linear infinite;
+}
+
+
+
+/**************************/
+/* Section Navbar */
+/**************************/
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+    padding: 1.6rem 9.6rem;
+  }
+  
+  .navbar .nav-grid-logo {
+    width: 8%;
+  }
+  
+  .nav-links {
+    display: flex;
+    justify-content: center;
+    column-gap: 1.6rem;
+  }
+  
+  .navbar li {
+    list-style: none;
+  }
+  
+  .navbar .nav-link {
+    text-transform: capitalize;
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: white;
+
+    padding-bottom: 1.6rem;
+  }
+
+
+/**************************/
+/* Section Navbar Dropdown */
+/**************************/
+  .services-drp-dwn {
+  display: none;
+  position: absolute;
+  top: 6.4rem;
+  right: 15%;
+  left: 15%;
+
+  z-index: 10;
+
+  padding: 4.8rem;
+
+  width: 65%;
+
+  background-color: var(--morelight-blue);
+  border-radius: 0.32rem;
+
+}
+
+.drp-dwn-nav-item:hover  .services-drp-dwn{
+  /* display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem; */
+
+  display: block;
+}
+
+.services-drp-dwn h3 {
+  margin: 0;
+
+  padding: 1.6rem 4.8rem 1.6rem 1.6rem;
+  border-bottom: 1px solid black;
+  cursor: pointer;
+
+}
+
+.drp-dwn {
+  width: 30%;
+  /* background-color: azure; */
+  transition: all 0.4s linear;
+}
+
+.drp-dwn:hover {
+  background-color: var(--dark-blue);
+  color: white;
+}
+
+.drp-dwn:hover .services-drp-dwn-heading {
+  border-bottom-color: var(--white);
+}
+
+
+.drp-dwn-items {
+  display: none;
+
+  position: absolute;
+  left: 32%;
+  top: 4.8rem;
+
+  /* min-height: 8vh; */
+
+  width: 63%;
+  padding: 3.4rem 16rem 1.6rem 6.4rem;
+}
+
+.drp-dwn-nav-item:hover .Services-link {
+  color: var(--yellow);
+}
+
+.drp-dwn-items a {
+    font-size: 1.8rem;
+    color: white;
+    text-decoration: none;
+}
+
+.drp-dwn-items li {
+  margin-bottom: 1.6rem;
+}
+
+.services-drp-dwn-links:hover .drp-dwn-items {
+  display: block;
+
+  background-color: var(--dark-blue);
+  color: white;
+}
+
+
+.services-drp-dwn-item .fa-circle {
+  font-size: 0.8rem;
+  padding-right: 0.96rem;
+}
+
+
+.services-drp-dwn-item {
+  display: flex;
+  align-items: center;
+  
+}
+
+
+
+
+
+
+  .heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding-top: 5rem;
+  /* justify-content: center; */
+
+  text-align: center;
+
+  color: var(--white);
+
+  min-height: 78vh;
+}
+
+.heading-dividing-line {
+  border: none;
+  border-bottom: 3px solid var(--white);
+  width: 30%;
+
+  /* margin: 2rem auto; */
+}
+
+.heading-desc-para {
+  font-size: 1.125rem;
+  letter-spacing: 1px;
+  font-size: 400;
+  line-height: 1.8rem;
+}
+
+.cta-btn {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  /* background-color: var(--dark-cyan); */
+  background-color: var(--yellow);
+  /* background-color: yellow; */
+  border: 2px solid var(--yellow);
+  color: var(--dark-blue);
+  /* text-transform: uppercase; */
+
+  border-radius: 0.2rem;
+
+  cursor: pointer;
+
+  transition: border-color 1s ease, color 1s ease;
+}
+
+.cta-btn:hover {
+  background-color: transparent;
+  border-color: var(--yellow);
+  color: var(--yellow);
+}
+
+/* .hero-heading-section {
+  position: relative;
+
+  animation: text-animation 1s linear 2s infinite;
+}
+
+@keyframes text-animation {
+  0% {
+    
+  }
+} */

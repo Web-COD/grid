@@ -1,0 +1,229 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 1;
+    color: #555;
+}
+
+/* Colours */
+:root {
+  --dark-blue: #023047;
+  --light-blue: #219EBC;
+  --morelight-blue: #8ECAE6;
+  --morelight: #eff4f7;
+  --yellow: #FFB703;
+  --orange: #FB8500;
+  --white: #ffffff;
+  --black: #000000;
+  --gray: rgb(50, 49, 49);
+
+
+
+  --newg: #343a40;
+  --new-gL: #868e96;
+}
+
+
+
+
+/**************************/
+/* Website Headings */
+/**************************/
+
+/* H1 Heading */
+.heading-primary {
+    font-size: 7.4rem;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+
+
+.heading-secondary {
+    font-size: 4.4rem;
+    font-weight: 600;
+    margin-bottom: 1.8rem;
+    color: #071E22;
+}
+
+
+/* H4 Heading */
+.heading-forth {
+    text-transform: uppercase;
+    letter-spacing: 0.4rem;
+    word-spacing: 0.6rem;
+    margin-bottom: 1.2rem;
+    font-size: 1.6rem;
+
+    display: inline-block;
+    color: #071E22;
+    font-weight: 600;
+
+    border-bottom: 2px solid #071E22;
+    padding-bottom: 0.6rem;
+}
+
+
+
+/**************************/
+/* Paragraph Defaults - P Tag */
+/**************************/
+.desc {
+    font-size: 1.8rem;
+    line-height: 1.6;
+    margin-bottom: 2.4rem;
+    font-weight: 400;
+}
+
+.sm-heading {
+    font-size: 2.4rem;
+    margin-bottom: 3rem;
+    color: #333;
+}
+
+/* Highlighted Text */
+.h-text {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #7F1425;
+    margin-bottom: 1.8rem;
+}
+
+.h-text-big {
+    font-size: 2.8rem;
+}
+
+.outline-box {
+    padding: 0.8rem 1.6rem;
+    border: 1px solid #333;
+    border-radius: 7px;
+}
+
+.price {
+    color: #7F1425;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+
+
+
+.svg-icon {
+    fill: #fff;
+}
+
+.svg-icon-blk {
+    display: inline-block;
+    background-color: #FFCC0B;
+    padding: 1rem;
+    border-radius: 100%;
+    margin-bottom: 2rem;
+}
+
+
+/**************************/
+/* Reusable Container Class */
+/**************************/
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+
+/**************************/
+/* Reusable Grids */
+/**************************/
+
+/* Grid Default */
+.grid {
+    display: grid;
+    gap: 9.6rem;
+    align-items: center;
+}
+
+/* 2 Column Grid */
+.grid-col-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-col-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-col-4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+/**************************/
+/* Reusable Grids */
+/**************************/
+
+/* Anchor Tag Defaults */
+.link {
+    color: #071E22;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-size: 600;
+    /* text-transform: uppercase; */
+}
+
+/* Button Default Styles */
+.btn {
+    display: inline-block;
+    width: 30rem;
+    padding: 1.2rem 2.4rem;
+    border-radius: 7px;
+}
+
+.cta-btn {
+    background-color: #FFCC0B;
+    color: #333;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    transition: all 0.3s linear;
+}
+
+/* .cta-btn:hover {
+    background-color: #7F1425;
+    color: #fff;
+}
+
+.cta-btn-dark {
+    background-color: #7F1425;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    transition: all 0.3s linear;
+} */
+
+.cta-btn-dark:hover {
+    background-color: #FFCC0B;
+    color: #333;
+}
+
+
+
+
+/* Primary Color - #7F1425 */
+/* Secondary Color - #FFCC0B */
+/* Rich Black - #071E22 */
+
+/* Font sizes (px)
+    10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+Spacing system (px)
+    2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */
